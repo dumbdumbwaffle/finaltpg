@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TPB - 404 Not Found</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Titillium+Web:wght@200&family=Turret+Road:wght@200;300;400;500;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="w3-container">
+      <div class="w3-row">
+        <nav style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding: 10px 0;">
+          <div class="w3-col w3-mobile logo" style="width: 20%">
+            <a href="https://thepaperbunny.com/" target="_blank" style="display: inline-block; padding: 10px 0;">
+              <img src="IMG/tpb-logo.avif" style="width: 150px; height: auto;">
+            </a>
+          </div>
+          <div class="w3-col w3-mobile nav-links" style="width: 60%">
+            <ul class="main-list">
+              <li><a href="index.html" class="w3-bar-item w3-mobile">New</a></li>
+              <li><a href="index.html" class="w3-bar-item w3-mobile">Bestsellers</a></li>
+              <li><a href="index.html" class="w3-bar-item w3-mobile">Bags</a></li>
+              <li><a href="index.html" class="w3-bar-item w3-mobile">Wear</a></li>
+              <li><a href="index.html" class="w3-bar-item w3-mobile">Accessories</a></li>
+              <li><a href="index.html" class="w3-bar-item w3-mobile">Home</a></li>
+              <li><a href="index.html" class="w3-bar-item w3-mobile">Wellness</a></li>
+              <li><a href="index.html" class="w3-bar-item w3-mobile">Kids</a></li>
+              <li><a href="index.html" class="w3-bar-item w3-mobile">Desk & Stationary</a></li>
+              <li><a href="index.html" class="w3-bar-item w3-mobile">Gifts</a></li>
+              <li><a href="index.html" class="w3-bar-item w3-mobile">Sales</a></li>
+            </ul>
+          </div>
+          <div class="w3-col w3-mobile rightIcons" style="width: 20%">
+            <div class="w3-row">
+              <a href="#"><img src="IMG/Search - Noun Project.png" alt="" style="max-width: 35px; height: auto;"></a>
+              <a href="#"><img src="IMG/icon.png" alt="" style="max-width: 35px; height: auto;"></a>
+              <a href="#"><img src="IMG/shopping.png" alt="" style="max-width: 45px; height: auto"></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    
+    <div class="w3-row-padding">
+      <div class="w3-col s6">
+        <a href="https://thepaperbunny.com/" target="_blank" style="display: inline-block; padding: 10px 0;">
+          <img src="IMG/tpb-logo.avif" style="width: 150px; height: auto; margin-top: 10px;">
+        </a>
+      </div>
+      <div class="w3-col s6">
+        <div style="margin-top: 17px;">
+          <a href="#"><img src="IMG/Search - Noun Project.png" alt="" style="max-width: 25px; height: auto;"></a>
+          <a href="#"><img src="IMG/icon.png" alt="" style="max-width: 25px; height: auto;"></a>
+          <a href="#"><img src="IMG/shopping.png" alt="" style="max-width: 35px; height: auto"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row scrollmenu">
+      <a href="index.html" class="w3-bar-item w3-mobile">New</a>
+      <a href="index.html" class="w3-bar-item w3-mobile">Bestsellers</a>
+      <a href="index.html" class="w3-bar-item w3-mobile">Bags</a>
+      <a href="index.html" class="w3-bar-item w3-mobile">Wear</a>
+      <a href="index.html" class="w3-bar-item w3-mobile">Accessories</a>
+      <a href="index.html" class="w3-bar-item w3-mobile">Home</a>
+      <a href="index.html" class="w3-bar-item w3-mobile">Wellness</a>
+      <a href="index.html" class="w3-bar-item w3-mobile">Kids</a>
+      <a href="index.html" class="w3-bar-item w3-mobile">Desk & Stationary</a>
+      <a href="index.html" class="w3-bar-item w3-mobile">Gifts</a>
+      <a href="index.html" class="w3-bar-item w3-mobile">Sales</a> 
+    </div>
+
+  </header>
+
+  <section>
+    <div class="error-page">
+      <div class="error-banner">
+        <div class="error-text">
+          <span class="digit">4</span>
+          <span class="icon"></span>
+          <span class="digit">4</span>
+        </div>
+        <p class="message">Uh-oh! Some Bunny Hopped Too Far</p>
+        <a href="#" class="go-back-btn">Hop Back To Safety</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="game">
+    <h1>Bunny Jumping Game</h1>
+    <p>Get 1000 points and get a special surprise!</p>
+    <canvas id="board"></canvas>
+  </section>
+
+  <section>
+    <button class="start-game" onclick="startGame();this.style.display='none'">Start Game</button>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-description">
+      <p>
+        The Paper Bunny is a lifestyle brand that combines function and aesthetic to offer thoughtful pieces designed
+        for intentional everyday living.
+      </p>
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">WHERE YOU CAN FIND US</a></li>
+        <li><a href="#">CAREERS</a></li>
+        <li><a href="#">SUSTAINABILITY</a></li>
+        <li><a href="#">CONTACT US</a></li>
+        <li><a href="#">CORPORATE</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">FAQS</a></li>
+        <li><a href="#">THE TPB BAG SIZE GUIDE</a></li>
+        <li><a href="#">SHIPPING POLICY</a></li>
+        <li><a href="#">RETURNS AND REFUND</a></li>
+        <li><a href="#">TERMS OF SERVICE</a></li>
+        <li><a href="#">PRIVACY POLICY</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">INSTAGRAM</a></li>
+        <li><a href="#">TIKTOK</a></li>
+        <li><a href="#">FACEBOOK</a></li>
+      </ul>
+    </div>
+
+    <!-- Accordion -->
+    <button class="accordion" style="border-top: 1px solid #000; margin-top: 50px;">ABOUT THE PAPER BUNNY &nbsp&nbsp <span class="plus-icon">+</span></button>
+    <div class="panel">
+      <a href="#">ABOUT US</a>
+      <a href="#">WHERE YOU CAN FIND US</a>
+      <a href="#">CAREERS</a>
+      <a href="#">SUSTAINABILITY</a>
+      <a href="#">CONTACT US</a>
+      <a href="#">CORPORATE</a>
+    </div>
+    
+    <button class="accordion">SUPPORT &nbsp&nbsp <span class="plus-icon">+</span></button>
+    <div class="panel">
+      <a href="#">FAQS</a>
+      <a href="#">THE TPB BAG SIZE GUIDE</a>
+      <a href="#">SHIPPING POLICY</a>
+      <a href="#">RETURNS AND REFUND</a>
+      <a href="#">TERMS OF SERVICE</a>
+      <a href="#">PRIVACY POLICY</a>
+    </div>
+    
+    <button class="accordion">FOLLOW OUR SOCIALS &nbsp&nbsp <span class="plus-icon">+</span></button>
+    <div class="panel">
+        <a href="#">INSTAGRAM</a>
+        <a href="#">TIKTOK</a>
+        <a href="#">FACEBOOK</a>
+    </div>
+
+    <div class="footer-newsletter">
+      <p>Get 10% off, exclusive access to launches,<br> sales, events and more!</p>
+      <input type="email" placeholder="your@address.com" style="border-radius: 5px;">
+      <button>SUBMIT</button>
+    </div>
+    <div class="footer-bottom">
+      <a href="#">Singapore / International</a>
+      <div>© 2024. The Paper Bunny is a registered trademark of TPB Collective Pte Ltd. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="club-button">Club TPB</div>
+  <div class="club-button-small"></div>
+
+  <!-- Game Success Alert -->
+  <div id="alert" class="w3-modal">
+    <div class="w3-modal-content w3-display-middle" id="alert-box">
+      <div class="w3-container w3-center" id="alert-container">
+        <span onclick="document.getElementById('alert').style.display='none'"
+          class="w3-button w3-display-topright">&times;
+        </span>
+        <h1 style="font-family: 'Montserrat';" id="congratsH1">Congratulations!</h1>
+        <h3 style="font-family: 'Montserrat';" id="congratsH2">Congratulations!</h3>
+        <div class="w3-panel w3-sand w3-border" style="border-radius: 5px;">
+          <p style="font-family: 'Montserrat';">Here's your code:</p>
+          <h3 class="w3-center" id="msg1" style="font-family: 'Montserrat';">"PaperBunny"</h3>
+          <h4 class="w3-center" id="msg2" style="font-family: 'Montserrat';">"PaperBunny"</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>

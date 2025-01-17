@@ -1,0 +1,697 @@
+/* Ensure the body is properly styled */
+body {
+  background: #f8f7f6 ;
+  font-family: 'Montserrat', 'Playfair Display', 'Lora', 'larken light';
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Navigation bar styling */
+.w3-row-padding {
+  background: #f8f7f6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: none;
+}
+
+div.scrollmenu {
+  background-color: #f8f7f6;
+  /* background-color: greenyellow; */
+  overflow: auto;
+  white-space: nowrap;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  left: 0;
+}
+
+div.scrollmenu a:hover {
+  background-color: #d16542;
+  color: white;
+}
+
+nav {
+  background: #f8f7f6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 10px;
+  list-style-type: none;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  position: relative; /* Required for the pseudo-element */
+  justify-content: space-evenly ;
+}
+
+nav li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Position the underline just below the text */
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background: #d16542; /* Color of the underline */
+  transition: width 0.3s ease; /* Smooth animation */
+}
+
+nav li a:hover::after {
+  width: 100%; /* Expands the underline to full width */
+}
+
+nav ul img{
+  padding-right:150px ;
+  width: 150px;
+  height: auto;
+}
+
+.logo {
+  display: flex; 
+  justify-content: flex-end;
+}
+
+.rightIcons {
+  display: flex; 
+  justify-content: flex-start;
+}
+
+/* Style for error page */
+.error-page {
+  margin-top: 20px; /* Adjust to account for nav bar height */
+  padding: 0 20px; /* Add some padding for better readability */
+  width: 100%; /* Ensure full width */
+  height: 100vh; /* Full viewport height for vertical centering */
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  box-sizing: border-box;
+  /* background-color: antiquewhite; */
+}
+
+.error-banner {
+  width: 100%; /* Ensure the banner takes full width */
+  max-width: 600px; /* Limit width for larger screens */
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+.error-text {
+  font-size: 20rem;
+  font-family: 'larken light';
+  color: #d16542;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.digit {
+  font-weight: lighter;
+}
+
+.icon {
+  background: url('IMG/tpb.gif') no-repeat center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  display: inline-block;
+  background-size: contain;
+}
+
+.message {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 20px 0;
+  font-family: 'Montserrat';
+}
+
+.go-back-btn {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  width: auto; /* Ensure button adjusts to content */
+  font-family: 'Montserrat';
+}
+
+.go-back-btn:hover {
+  background-color: #d16542;
+}
+
+/* game */
+/* Canvas styling */
+#board {
+  background: url(./game\ img/moving-cloud4.gif) #f1e9e0;
+  border-bottom: 1px solid black;
+  margin: 0px 300px;
+  margin-bottom: 50px;
+}
+
+/* Styling for the game section */
+section.game {
+  text-align: center;
+  padding: 10px;
+}
+
+.start-game {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #d16542;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  width: auto; /* Ensure button adjusts to content */
+  font-family: 'Montserrat';
+  border: none;
+}
+
+.start-game:hover {
+  background-color: #000;
+}
+
+section.game h1 {
+  font-size: 2.5rem; /* Larger title on bigger screens */
+  font-family: 'Playfair Display', serif;
+  color: #d16542;
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+}
+
+section.game p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-description {
+  flex: 1;
+  max-width: 35%;
+  margin-bottom: 50px;
+  margin-top: 70px;
+  text-align: left;
+}
+
+.footer-description p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.2;
+  font-family: 'larken light';
+}
+
+.footer-links {
+  display: flex;
+  flex: 1;
+  max-width: 50%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  margin-top: 70px;
+  text-align: left;
+}
+
+.footer-links ul li {
+  margin: 6px 0;
+  padding-right: 90px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 11px;
+  line-height: 1.6;
+  position: relative; /* Required for the pseudo-element */
+}
+
+.footer-links ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Position the underline just below the text */
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background: #D16452; /* Color of the underline */
+  transition: width 0.3s ease; /* Smooth animation */
+}
+
+.footer-links ul li a:hover:after {
+  width: 100%; /* Expands the underline to full width */
+}
+
+.footer-newsletter {
+  margin-top: 40px;
+  flex-basis: 100%;
+  text-align:left;
+}
+
+.footer-newsletter button {
+  border-radius: 5px;
+}
+
+.footer-newsletter input[type="email"] {
+  padding: 25px 30px;
+  width: 200px;
+  border: 1px solid;
+  border-color: black;
+  font-size: 10px;
+  text-align: left;
+  background-color: white;
+  border-radius: 0;
+}
+
+.footer-newsletter button {
+  padding: 17px 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.footer-newsletter button:hover {
+  background-color:#d16542;
+}
+
+.footer-newsletter p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #555;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #555;
+}
+
+.club-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #553e2f ;
+  color: white;
+  padding: 20px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  background-image: url('IMG/sparkle tpg.png');
+  background-repeat: no-repeat;
+  background-position:25px center;
+  background-size: 20px; /* Adjust size of the image */
+  padding-right: 30px; /* Add space for the image */
+  padding-left: 60px;
+}
+
+.club-button-small {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #553e2f ;
+  color: white;
+  padding: 27px 27px;
+  font-size: 14px;
+  cursor: pointer;
+  background-image: url('IMG/sparkle tpg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  display: none;
+}
+
+.plus-icon {
+  font-size: larger;
+  float: right;
+}
+
+.accordion {
+  background-color: #f8f7f6;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border:#333;
+  text-align: left;
+  outline: none;
+  font-size: smaller;
+  transition: 0.4s;
+  border-bottom: 1px solid #000;
+  font-family: 'Montserrat';
+  display: none;
+}
+
+.accordion.active {
+  background-color: #D16452; 
+  color: white;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #f8f7f6;
+  overflow: hidden;
+  text-align: left; /* Aligns text to the left */
+
+}
+
+.panel a {
+  display: block; /* Makes each link take a new line */
+  margin: 20px 0; /* Optional: Adds spacing between the links */
+  text-align: left; /* Aligns text to the left */
+  font-size: small;
+  text-decoration: none; /* Removes underline */
+}
+
+#alert-box {
+  width: 50%;
+}
+
+#congratsH2 {
+  display: none;
+}
+
+#msg2 {
+  display: none;
+}
+
+/*------------  -----------------*/
+/* Responsive Adjustments */
+@media (max-width: 1355px) {
+  .nav-links {
+    display: none;
+  }
+
+  nav ul .main-list {
+    display: none;
+  }
+
+  .footer-description {
+    max-width: 50%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .footer-links ul li {
+    padding-right: 0;
+  }
+
+  #board {
+    margin: 0 100px; /* Adjust margin for medium screens */
+  }
+
+  div.scrollmenu {
+    top: 0;
+    margin-top: 50px;
+    display:inline-flex;
+    justify-content: center;
+  }
+}
+
+/*------------ Tablets device -----------------*/
+@media (max-width: 768px) {
+  /* Navigation */
+  .nav-links {
+    display: none;
+  }
+
+  nav ul .main-list {
+    display: none;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .rightIcons {
+    justify-content: center;
+  }
+
+  /* Error Page */
+  .error-page {
+    margin-top: 80px; /* Adjust to account for nav bar height */
+    height: auto; /* Remove full height on small screens */
+    padding: 20px; /* Add padding to ensure content isn't too close to edges */
+  }
+
+  .error-text {
+    font-size: 8rem; /* Smaller font size for mobile */
+  }
+
+  .icon {
+    width: 120px; /* Smaller icon on mobile */
+    height: 120px;
+  }
+
+  .message {
+    font-size: 1.2rem; /* Reduce the message size */
+    margin: 10px 0;
+    font-family: 'Montserrat';
+  }
+
+  .go-back-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  section.game h1 {
+    font-size: 1.8rem; /* Smaller title on mobile */
+  }
+
+  section.game p {
+    font-size: 1rem; /* Smaller font size on mobile */
+  }
+
+  #board {
+    background: url(./game\ img/moving-cloud3.gif) #f1e9e0;
+    width: 90%; /* Reduce width on mobile */
+    height: 200px; /* Set a fixed height on mobile */
+    max-width: 90%; /* Limit max width */
+    margin: 0 auto;
+  }
+
+  .footer-description {
+    max-width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .footer-newsletter {
+    text-align: left;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    display: none;
+  }
+
+  .accordion {
+    display: block;
+  }
+
+  .club-button {
+    font-size: 12px;
+    padding: 15px 15px;
+    background-size: 15px;
+    padding-left: 40px;
+  }
+
+  div.scrollmenu {
+    top: 0;
+    margin-top: 50px;
+    display:inline-flex;
+    justify-content: center;
+  }
+}
+/*------------ Phone device -----------------*/
+@media (max-width: 480px) {
+  /* Navigation */
+  .nav-links {
+    display: none;
+  }
+
+  nav ul .main-list {
+    display: none;
+  }
+
+  .w3-container {
+    display: none;
+  }
+
+  .w3-row-padding {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .rightIcons {
+    width: 50%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  nav ul .main-list {
+    display: none;
+  }
+
+  section.game h1 {
+    font-size: 1.5rem; /* Adjust title for very small screens */
+  }
+
+  section.game p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+  }
+
+  #board {
+    height: 150px; /* Reduce the canvas height for very small screens */
+  }
+
+  .footer-links {
+    display: none;
+  }
+
+  .accordion {
+    display: block;
+  }
+
+  .footer-newsletter {
+    text-align: center;
+  }
+
+  .footer-newsletter input[type="email"] {
+    width: 100%; /* Full width for email input */
+  }
+
+  .footer-newsletter button {
+    width: 100%; /* Full width for button */
+    margin-top: 15px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    font-size: 10px; /* Smaller font */
+  }
+
+  .club-button {
+    display: none;
+  }
+
+  .club-button-small {
+    display:block;
+  }
+
+  div.scrollmenu {
+    top: 0;
+    margin-top: 50px;
+    display:inline-flex;
+    justify-content: center;
+  }
+
+  #alert-box {
+    width: 100%;
+    display: block;
+    justify-content: center;
+  }
+
+  #alert-container {
+    display: block;
+  }
+
+  #congratsH1 {
+    display: none;
+  }
+
+  #congratsH2 {
+    display: block;
+    margin: 20px;
+  }
+
+  #msg1 {
+    display: none;
+  }
+
+  #msg2 {
+    display: block;
+  }
+}
